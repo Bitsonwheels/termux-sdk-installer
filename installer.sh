@@ -80,7 +80,7 @@ gen_data() {
   if ! command -v curl &> /dev/null; then
     echo -e "${red}curl is not installed!${nocol}"
     echo "Install it with pkg install curl"
-    echo ""
+    echo "pkg install curl"
     exit 1
   fi
   curl --silent -L -o ${manifest} ${manifest_url}
